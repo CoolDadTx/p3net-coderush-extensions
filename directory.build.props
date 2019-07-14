@@ -1,0 +1,11 @@
+<Project>
+    <PropertyGroup>
+        <Version>2.0.0</Version>
+        <AssemblyVersion>2.0.0.0</AssemblyVersion>
+        <Product>P3Net CodeRush Context Providers</Product>
+
+        <Company>Michael Taylor</Company>
+        <Authors>P3Net;Michael Taylor</Authors>
+        <Copyright>Copyright © Michael Taylor, All Rights Reserved</Copyright>
+    </PropertyGroup>
+</Project>

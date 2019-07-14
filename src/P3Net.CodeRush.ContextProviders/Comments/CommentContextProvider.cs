@@ -1,8 +1,10 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading;
+﻿/*
+ * Copyright © 2012 Michael Taylor (P3Net)
+ * All Rights Reserved
+ *
+ * http://www.michaeltaylorp3.net
+ */
+using System;
 using System.Threading.Tasks;
 
 using DevExpress.CodeAnalysis.Workspaces;
@@ -22,15 +24,9 @@ namespace P3Net.CodeRush.ContextProviders.Comments
 
         protected bool IsDocumentation { get; set; }
 
-        public override string Language
-        {
-            get { return KnownLanguageNames.CSharp; }
-        }
+        public override string Language => KnownLanguageNames.CSharp;
 
-        public override string Category
-        {
-            get { return @"P3Net\Code"; }
-        }
+        public override string Category => @"P3Net\Code";       
 
         public override async Task<bool> IsSatisfiedAsync ( IProviderContext context, ParameterCollection parameters )
         {
@@ -71,7 +67,7 @@ namespace P3Net.CodeRush.ContextProviders.Comments
         }
 
         //Determine if we are in a comment
-        private bool InCommentElement ( SyntaxNode node )
+        private bool InCommentElement ( SyntaxNode node ) 
         {
             var kind = node.Kind();
             return kind == SyntaxKind.SingleLineCommentTrivia || kind == SyntaxKind.MultiLineCommentTrivia;
