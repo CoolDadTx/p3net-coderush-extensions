@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.Net.Sdk">
     <PropertyGroup>
         <TargetFramework>net472</TargetFramework>
-        <PackageReleaseNotes>Updated to CodeRush 18.1</PackageReleaseNotes>    
+        <PackageReleaseNotes>Updated to CodeRush 20.x</PackageReleaseNotes>    
     </PropertyGroup>
     <ItemGroup>
         <Reference Include="System.ComponentModel.Composition" />
